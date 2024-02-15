@@ -1,0 +1,28 @@
+#Welcome message
+print("Welcome to the tip calculator.")
+#Prompt the user for the bill
+bill = input("What did the bill come to? $")
+#Prompt the user for the tip percentage they want to give
+tip = input("What percentage tip would you like to give? 10, 12, or 15? ")
+#Prompt the user for the number of people splitting the bill
+people = input("How many people to split the bill? ")
+#Converting the bill to a float so that it can be used in calculations and actually resembles a monetary figure
+bill_float = float(bill)
+#Converting the tip to an int so that it can be used in calculations
+tip_int = int(tip)
+#Converting the number of people to an int so that it can be used in calculations
+people_int = int(people)
+#Dividing the tip by 100 so it can be multiplied later on by the bill
+tip_percent = tip_int / 100
+#Multiplying the tip by the bill to get the tip amount
+tip_amount = bill_float * tip_percent
+#Adding the bill and tip amount to get the total cost of the meal
+total_bill = bill_float + tip_amount
+#Dividing the total bill by the number of people to get the amount each person should pay
+bill_per_person = total_bill / people_int
+#Rounding the amount each person should pay to 2 decimal places
+final_amount = round(bill_per_person, 2)
+#Formatting the final amount to always show 2 decimal places even if it is a whole number. This needed Googling.
+final_amount = "{:.2f}".format(bill_per_person)  
+#Printing the final amount each person should pay onscreen.
+print(f"Each person should pay: ${final_amount}")
