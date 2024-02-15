@@ -1,0 +1,10 @@
+#Asking the user to input their age
+age = input()
+
+#Assuming they are going to live to 90, I subtract their age from 90
+years = 90 - int(age)
+#I multiply 52 by the result of the previous calculation to get the number of weeks they have left of their life.
+weeks = years*52
+
+#Message displaying how many weeks they have left
+print(f"You have {weeks} weeks left.")
