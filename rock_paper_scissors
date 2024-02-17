@@ -1,0 +1,54 @@
+rock = '''
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+'''
+
+paper = '''
+    _______
+---'   ____)____
+          ______)
+          _______)
+         _______)
+---.__________)
+'''
+
+scissors = '''
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+'''
+
+
+#Import the random module as it is crucial in determining the computer's behaviour
+import random
+
+#Create a list of the game's options
+game_options = [rock, paper, scissors]
+
+#Ask for the player's input. Do they want to select rock, paper or scissors?
+player_choice = int(input("Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
+#Create a variable to store the player's choice as a string.
+player_choice_string = game_options[player_choice]
+#Create a variable to store the computer's choice. 
+computer_choice = random.randint(0, 2)
+#Store the computer's choice as a string.
+computer_choice_string = game_options[computer_choice]
+#Create a variable to store the outcome of the game.
+outcome = ""
+#Create a conditional statement to determine the outcome of the game.
+if player_choice == 0 and computer_choice == 2 or player_choice == 1 and computer_choice == 0 or player_choice == 2 and computer_choice == 1:
+  outcome = "You win!"
+elif player_choice == 0 and computer_choice == 1 or player_choice == 1 and computer_choice == 2 or player_choice == 2 and computer_choice == 0:
+  outcome = "You lose!"
+else:
+  outcome = "It's a draw!"
+
+#Print outcome
+print(f"You chose:\n{player_choice_string}\nComputer chose:\n{computer_choice_string}\n{outcome}")
