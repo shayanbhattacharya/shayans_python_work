@@ -1,0 +1,38 @@
+from replit import clear
+#HINT: You can call clear() to clear the output in the console.
+
+#Creating a dictionary to store the bids
+bids = {}
+#Creating a varibale to keep track of whether or not the game is over
+bidding_over = False
+
+#Function to determine the highest bidder and therefore, the winner
+def highest_bidder(bidding_record):
+  #Creating a varibale to store the highest bid value. It will be empty to begin with.
+  highest_bid = 0
+  #Creating a blank variable for the winner's name
+  winner = ""
+  for bidder in bidding_record:
+    #Creating a variable to store the highest bid through key value pairs
+    bid_amount = bidding_record[bidder]
+    if bid_amount > highest_bid:
+      highest_bid = bid_amount
+      winner = bidder
+  print(f"The winner is {winner} with a bid of ${highest_bid}")
+
+while not bidding_over:
+  #Ask the user for their name
+  name = input("What is your name?: ")
+  #Ask the user how much money they would like to bid
+  price = int(input("How much would you like to bid?: $"))
+  #Adding the users' bids to the empty bids dictionary
+  bids[name] = price
+  #Asking the user if there are any other bidders
+  should_continue = input("Are there any other bidders? Type 'yes' or 'no'. ")
+  #If there are no other bidders, the game is over. Otherwise, clear the screen and ask for the next bidder
+  if should_continue == "no":
+    bidding_over = True
+    #Call the function to find the highest bidder
+    highest_bidder(bids)
+  elif should_continue == "yes":
+    clear()
