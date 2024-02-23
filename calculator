@@ -1,0 +1,50 @@
+#This must be run in replit as I make use of the 'clear' function
+from replit import clear
+
+
+#Creating functions for the operations
+def add(n1, n2):
+  return n1 + n2
+
+def subtract(n1, n2):
+  return n1 - n2
+
+def multiply(n1, n2):
+  return n1 * n2
+
+def divide(n1, n2):
+  return n1 / n2
+
+#Creating a dictionary for the operations
+operations = {
+  "+": add,
+  "-": subtract,
+  "*": multiply,
+  "/": divide
+}
+#Function for the calcuator
+def calculator():
+
+#Asking the user for the first number
+  num1 = float(input("What's the first number?: "))
+  for symbol in operations:
+    print(symbol)
+  should_continue = True
+
+  #Asking the user for additional details if they want to keep going
+  while should_continue:
+    operation_symbol = input("Pick an operation: ")
+    num2 = float(input("What's the next number?: "))
+    calculation_function = operations[operation_symbol]
+    answer = calculation_function(num1, num2)
+    print(f"{num1} {operation_symbol} {num2} = {answer}")
+  #Accounting for whther or not the user continues to calculate
+    if input(f"Type 'y' to continue with {answer}, or hit another key to start a new calculation: ") == 'y':
+      num1 = answer
+    else:
+      should_continue = False
+      clear()
+      calculator()
+
+calculator()
+#The program will reset if the user types 'n'
