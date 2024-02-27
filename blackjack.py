@@ -3,7 +3,7 @@ import random
 import os
 import platform
 
-#Creating a function to clear the console, regardles of whther you use a mac or PC
+#Creating a function to clear the console, regardless of whether you use a mac or PC
 def clear():
     if platform.system() == 'Windows':
         os.system('cls')
