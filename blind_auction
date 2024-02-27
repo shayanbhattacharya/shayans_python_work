@@ -1,5 +1,5 @@
 from replit import clear
-#HINT: You can call clear() to clear the output in the console.
+#I call clear() to clear the output in the console.
 
 #Creating a dictionary to store the bids
 bids = {}
