@@ -1,0 +1,15 @@
+import tkinter
+
+#Initialising the class
+window = tkinter.Tk()
+#This determines the title in the top bar
+window.title("My first tkinter GUI program")
+window.minsize(width=500, height=400)
+
+#Label creation
+my_label = tkinter.Label(text="Label 1", font=("Arial", 24, "bold"))
+#Label display
+my_label.pack(side="left")
+
+#This keeps the GUI window open
+window.mainloop()
