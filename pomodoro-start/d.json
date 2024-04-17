@@ -1,0 +1,30 @@
+{
+    "comment": "https://speechmaticssupport.zendesk.com/agent/tickets/97111",
+    "contractid": "731",
+    "creationdate": "2024-04-02 20:31:03",
+    "customer": "ai media",
+    "id": "90463a504c7042daac64e8e148cc3d22",
+    "licensetype": "Production",
+    "metadata": {
+        "key_pair_id": 1,
+        "request": {
+            "comment": "https://speechmaticssupport.zendesk.com/agent/tickets/97111",
+            "contractid": "731",
+            "customer": "ai media",
+            "features": [
+                "MAPRT",
+                "AMCC",
+                "APD",
+                "APR",
+                "ASS",
+                "LANY"
+            ],
+            "notValidAfter": "2025-04-03",
+            "validFrom": "2024-02-29"
+        }
+    },
+    "signedclaimstoken": "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJmZWF0dXJlcyI6WyJNQVBSVCIsIkFNQ0MiLCJBUEQiLCJBUFIiLCJBU1MiLCJMQU5ZIl0sImNvbnRyYWN0aWQiOiI3MzEiLCJpc190cmlhbCI6ZmFsc2UsImV4cCI6MTc0MzYzODQwMCwianRpIjoiOTA0NjNhNTA0YzcwNDJkYWFjNjRlOGUxNDhjYzNkMjIiLCJpYXQiOjE3MTIwODk4NjMsImlzcyI6IlNwZWVjaG1hdGljcyIsIm5iZiI6MTcwOTE2NDgwMCwic3ViIjoiYWkgbWVkaWEifQ.YOFgsi9W_NlElhDp3Grji9n0slZdLcMXc7mKsDjQ9YXE3Tfs5G3_atWaf6KYMH2zA5HVLHJGkiqhHU0Zox_fHZ89huriCmkjIl1TuWaI1w_TH6sVsR_jfF3Mzs0pb1ah_YsK25zJJ6m4CNGVHGGigrGqfkI8x_Xz6bae409HleAElFU42M93MKnVSzrgXs1oHAlwHpgD9k2xoA6E3TZ3HlqDEt-Fokl89L18qxr_jhTUvn70trUU0WwWeg6mTvliDPvk6-lbG_enkRPUXdBAGu652aN74CHO-t_az_tD6PZnX3Gouu9FmOwcWuHfSvs6ZTaqMxxWXj-PReoY6CAyog",
+    "unitquantity": "1",
+    "unittype": "Hours",
+    "version": 1
+}
